@@ -39,7 +39,7 @@ ___
 * HTTP/1의 경우 하나의 TCP 연결에 하나의 스트림만 사용하기 때문에 HOLB 문제를 가지고 있음. Kepp-alive 옵션으로 어느 정도의 연결을 유지할 수는 있지만 한계가 있음.
 * HTTP/2, 3 의 경우 하나의 연결에서 여러개의 데이터를 전송할 수 있기 때문에 핸드 쉐이크 감소 + 효율적 데이터 전송.
 
-![Image of Multiplexing](Multiplexing.png)
+![Image of Multiplexing](img/Multiplexing.png)
 
 ## 5. HPACK vs QPACK
 **HPACK**: 무손실 압축을 하는 알고리즘(Huffman code를 사용)을 사용해서 Header정보를 압축한다. 요청과 응답의 중복되는 부분을 제거해 전송되는 데이터의 양을 줄일 수 있다.
