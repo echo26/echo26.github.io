@@ -25,7 +25,7 @@ ___
 2. 서버는 요청수락(sync+ack)하고 서버는 sync_received 상태가 됨. 시퀀스 번호를 1 증가 시켜 ack 필드에 담아 보냄.
 3. 클라이언트는 서버에 수락확인(ack)을 보내고 서버는 established 상태가 됨. 서버로 부터 받은 시퀀스 번호를 1 증가시켜서 자신의 ack 필드에 담아 보냄.
 
-![Image of handshaking](tcphandshaking.png)
+![Image of handshaking](img/tcphandshaking.png)
 
 #### TCP를 사용하면 통신을 시작하기 전 무조건 3 way handshaking이라는 과정을 거쳐야 한다.
 
