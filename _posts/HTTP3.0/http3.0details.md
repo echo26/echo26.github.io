@@ -31,7 +31,7 @@ ___
 * TCP + TLS: 3 RTT가 필요. (TCP 연결. TLS 암호화 연결. TLS 완료.)
 * UDP: 1 RTT (첫 연결 설정.) 0 RTT ( 한번 연결에 성공하면, 그 설정을 캐싱 해 놓고 다음 연결시 바로 연결 성립)
 
-![Image of RTT](gcp-cloud-cdn-performance.gif)
+![Image of RTT](img/gcp-cloud-cdn-performance.gif)
 
 ## 4. Multiplexing
 **Multiplexing**: 하나의 connection 상에서 동시에 여러개의 request를 보내는 기술. 각각의 데이터 흐름을 스트림이라 부른다.
