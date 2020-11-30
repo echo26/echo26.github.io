@@ -36,9 +36,24 @@ ___
 ## 4. Multiplexing
 **Multiplexing**: 하나의 connection 상에서 동시에 여러개의 request를 보내는 기술. 각각의 데이터 흐름을 스트림이라 부른다.
 
-* HTTP/1의 경우 
+* HTTP/1의 경우 하나의 TCP 연결에 하나의 스트림만 사용하기 때문에 HOLB 문제를 가지고 있음. Kepp-alive 옵션으로 어느 정도의 연결을 유지할 수는 있지만 한계가 있음.
+* HTTP/2, 3 의 경우 하나의 연결에서 여러개의 데이터를 전송할 수 있기 때문에 핸드 쉐이크 감소 + 효율적 데이터 전송.
 
+![Image of Multiplexing](Multiplexing.png)
 
 ## 5. HPACK vs QPACK
+**HPACK**: 무손실 압축을 하는 알고리즘(Huffman code를 사용)을 사용해서 Header정보를 압축한다. 요청과 응답의 중복되는 부분을 제거해 전송되는 데이터의 양을 줄일 수 있다.
+**QPACK**: 순서가 바뀐 전송에서도 헤더의 도착 순서를 보장.
+
+HPACK의 순차적인 스트림 전달 순서 없이 전달 가능하게 하여 병렬처리 성능을 개선하여 나온 QPACK
 
 ## 6. HTTP 버젼별 비교
+
+
+| 항목 \ Version | HTTP 1.1 | HTTP 2.0 | HTTP 3.0 | 
+| ------ | -----| ----- | ----- | 
+| Multiplexing| X | O | O |
+| Header 압축 | | O | O |
+| Server Push | X | O | |
+| Binary Protocols | X | O | O |
+| TCP/UDP | TCP | TCP | UDP |
