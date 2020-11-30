@@ -7,12 +7,21 @@ ___
 # HTTP 3.0
 
 ## Outline
-* TCP/UDP UDP가 적용된 HTTP/3.0
-** TCP VS UDP
-* TCP HOL Blocking
-* Connection ID
-* O-RTT
-* HPACK과 QPACK
+1. [TCP 의 특징](tcpDegradation.md)
+* TCP에 대한 기본 설명
+* 성능 저하 요인
+- 3 way handshaking
+- TCP HOL Blocking
+
+2. [HTTP 3.0의 특징](http3.0details.md)
+- UDP의 정의 및 특징
+- O-RTT
+- Multiplexing
+- HPACK & QPACK
+- HTTP 1.1 vs 2.0 vs 3.0
+
+3. HTTP 3.0 적용시 고려 사항
+
 
 
 ## Basics
