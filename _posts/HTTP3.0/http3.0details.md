@@ -53,7 +53,7 @@ HPACK의 순차적인 스트림 전달 순서 없이 전달 가능하게 하여 
 | 항목 \ Version | HTTP 1.1 | HTTP 2.0 | HTTP 3.0 | 
 | ------ | -----| ----- | ----- | 
 | Multiplexing| X | O | O |
-| Header 압축 | | O | O |
-| Server Push | X | O | |
+| Header 압축 | X| O | O |
+| Server Push | X | O | O|
 | Binary Protocols | X | O | O |
 | TCP/UDP | TCP | TCP | UDP |
