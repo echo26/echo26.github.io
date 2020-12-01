@@ -20,7 +20,7 @@ ___
 - HPACK & QPACK
 - HTTP 1.1 vs 2.0 vs 3.0
 
-3. HTTP 3.0 적용시 고려 사항
+3. [HTTP 3.0 적용시 고려 사항](http3.0requirements.md)
 
 
 
