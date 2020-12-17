@@ -8,6 +8,6 @@ consensus 알고리즘의 특징 : fault-tolerant (하나 이상의 components�
 
 ## Raft
 
-**Raft: Consensus algorithm의 한 종류.
+**Raft: Consensus algorithm의 한 종류.**
 
 [Raft](https://raft.github.io/)
