@@ -7,7 +7,7 @@
 
 ## 컨테이너와 VM의 차이
 
-| \ | Container | VM |
+| / | Container | VM |
 | -- | -- | -- |
 | Definition | | |
 | 분리 방식 | os를 가상화. 커널을 host와 공요. | 가상화된 하드위에 os가 올라가는 형태. host와 완벽하게 분리|
