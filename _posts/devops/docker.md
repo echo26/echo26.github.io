@@ -15,7 +15,6 @@
 | 크기 | host보다는 느리지만 vm보다 빠름 | 느리다. (io가 발생하는 통로가 많다. 커널 처리가 많아서 속도 지연 발생.) |
 | LifeCycle | image를 registry에 배포. 개서 올리고 기존꺼 내리고. 컨테이너 오케스트레이션 적용. | 버전업시: repo pull. 다수 서버에 일일이... 스크립트 에러 가능성... |
 | 보안 | 컨테이너 하나가 노출되면 전체 os에 문제 | 하나의 vm이 공격당해도 안전|
-| 멀티 OS |  | |
 
 ![Image of docker and vm](img/containerVSvm.png)
 
