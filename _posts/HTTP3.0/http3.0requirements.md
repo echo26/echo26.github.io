@@ -19,7 +19,7 @@ ___
 
 ## 2. 단계별 HTTP 3.0 적용
 
-#### 기존 example.com:20000에서 http/2.0 또는 http/1.1 수행 한다고 가정.
+#### example.com:20000에서 http/2.0 또는 http/1.1 수행 한다고 가정.
 #### example.com:30000 에서 http/3.0을 수행.
 
 1. Client가 example.com:20000으로 Request
