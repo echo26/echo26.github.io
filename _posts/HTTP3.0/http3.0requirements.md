@@ -25,7 +25,7 @@ ___
 3.0에 보냈지만, 존재하지 않는 경우 alt-svc 응답을 통해 2.0으로 요청 변경하도록 유도.
 
 
-![Image of handshaking](img/QUICAltSvc.png)
+![Image of handshaking](img/QUIC-AltSvc.png)
 
 
 ## 3. 현재 HTTP 3.0을 지원하는 browser & Server
