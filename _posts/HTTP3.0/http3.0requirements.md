@@ -40,6 +40,7 @@ ___
 | envoy | X | server| |
 | haproxy | 2.3 | server| [link](https://www.haproxy.com/blog/announcing-haproxy-2-3/)|
 | apache | X | server| | 
-| chrome | | browser | [link](https://blog.chromium.org/2020/10/chrome-is-deploying-http3-and-ietf-quic.html)|
-| safari | maxOS11 & iOS14| browser | [link](https://www.iphoneincanada.ca/news/apple-safari-http3-ios-14/) |
-| whale | X | | |
+| chrome | 지원하지 않지만, 실행 가능 | browser | [link](https://blog.chromium.org/2020/10/chrome-is-deploying-http3-and-ietf-quic.html)|
+| safari | maxOS11 & iOS14 지원하지 않지만, 실행 가능| browser | [link](https://www.iphoneincanada.ca/news/apple-safari-http3-ios-14/) |
+| whale | X | browser | |
+| IE | X | browser | |
