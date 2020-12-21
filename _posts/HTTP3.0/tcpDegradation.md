@@ -38,6 +38,5 @@ ___
 **HOL Blocking**: 패킷이 중간에 유실되거나 수신 측의 패킷 파싱 속도가 느릴때 통신이 병목이 발생하게 되는 현상. TCP 자체의 문제이며 패킷의 처리 속도가 지연되고, 최악의 경우 드랍 발생.
 
 * TCP 통신에서 패킷은 반드시 순서대로 처리되어야 한다.(시퀀스 번호를 참고하여 패킷을 재조립하기 때문에)
-* 파일 초입에 큰 이미지 파일이나 js 파일이 있을 경우 지연이 발생함.
-
-![Image of hol](img/tcpHOL.png)
+* HTTP2 에서는 Stream을 통한 multiplexing으로 slow first resource에 대한 문제를 해결.
+* 단, TCP packet 유실이 있다면, 모든 later packet들은 재전송을 가다려야 하며 HOL blocking이 발생한다.
