@@ -24,6 +24,10 @@ ___
 클라이언트에서 http/3.0을 수행하는 곳으로 요청을 보내도록 유도.
 3.0에 보냈지만, 존재하지 않는 경우 alt-svc 응답을 통해 2.0으로 요청 변경하도록 유도.
 
+
+![Image of handshaking](img/QUICAltSvc.png)
+
+
 ## 3. 현재 HTTP 3.0을 지원하는 browser & Server
 
 
