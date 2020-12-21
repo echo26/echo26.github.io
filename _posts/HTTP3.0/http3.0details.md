@@ -57,3 +57,7 @@ HPACK의 순차적인 스트림 전달 순서 없이 전달 가능하게 하여 
 | Server Push | X | O | O|
 | Binary Protocols | X | O | O |
 | TCP/UDP | TCP | TCP | UDP |
+
+* Packet 비교.
+
+![Image of Multiplexing](img/httpComparison.png)
