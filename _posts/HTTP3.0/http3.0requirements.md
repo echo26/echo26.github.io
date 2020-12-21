@@ -20,12 +20,13 @@ ___
 ## 2. 단계별 HTTP 3.0 적용
 
 #### 기존 example.com:20000에서 http/2.0 또는 http/1.1 수행 한다고 가정.
-#### example.com:20001 에서 http/3.0을 수행.
+#### example.com:30000 에서 http/3.0을 수행.
 
-1. Client
-클라이언트에서 http/3.0을 수행하는 곳으로 요청을 보내도록 유도.
-3.0에 보냈지만, 존재하지 않는 경우 alt-svc 응답을 통해 2.0으로 요청 변경하도록 유도.
-
+1. Client가 example.com:20000으로 Request
+2. examle.com:20000에서 Alt-svc와 함께 Response (Alt-svc: quic="example.com:30000" 또는, Alt-svc: quic:":30000")
+3. Client가 Alt-svc를 확인하고, HTTP/3.0을 지원한다면 호출처 변경
+4. Client가 example.com:30000으로 Request (HTTP3.0)
+5. example.com:30000으로 부터 QUIC Response
 
 ![Image of handshaking](img/QUIC-AltSvc.png)
 
