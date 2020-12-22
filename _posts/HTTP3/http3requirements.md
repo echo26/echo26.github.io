@@ -15,6 +15,8 @@ ___
 
 * eg)  Alt-Svc: h2="new.example.org:80"
 
+* 지속시간 :24시간. (ma=? 로 시간 설정 가능)
+
 `http2.0`을 사용해서 `new.example.org`의 `80`번 포트를 사용.
 
 ## 2. 단계별 HTTP 3 적용
