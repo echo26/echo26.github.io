@@ -28,7 +28,7 @@ ___
 4. Client가 example.com:30000으로 Request (HTTP3.0)
 5. example.com:30000으로 부터 QUIC Response
 
-![Image of handshaking](img/QUIC-AltSvc.png)
+![Image of handshaking](img/QUICAltSvc.png)
 
 
 ## 3. 현재 HTTP 3을 지원하는 browser & Server
