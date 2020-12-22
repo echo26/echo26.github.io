@@ -17,7 +17,7 @@ ___
 
 * 지속시간 :24시간. (ma=? 로 시간 설정 가능)
 
-`http2.0`을 사용해서 `new.example.org`의 `80`번 포트를 사용.
+`http/2`을 사용해서 `new.example.org`의 `80`번 포트를 사용.
 
 ## 2. 단계별 HTTP/3 적용
 
@@ -27,7 +27,7 @@ ___
 1. Client가 example.com:20000으로 Request
 2. examle.com:20000에서 Alt-svc와 함께 Response (Alt-svc: quic="example.com:30000" 또는, Alt-svc: quic:":30000")
 3. Client가 Alt-svc를 확인하고, HTTP/3을 지원한다면 호출처 변경
-4. Client가 example.com:30000으로 Request (HTTP3.0)
+4. Client가 example.com:30000으로 Request (HTTP/3)
 5. example.com:30000으로 부터 QUIC Response
 
 ![Image of handshaking](img/QUICAltSvc.png)
