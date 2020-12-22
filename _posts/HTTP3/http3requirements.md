@@ -1,5 +1,5 @@
 ---
-title: "Requirements in applying HTTP 3.0"
+title: "Requirements in applying HTTP 3"
 date: 2020-11-02 17:00:00 -0400
 categories: study update
 ___
