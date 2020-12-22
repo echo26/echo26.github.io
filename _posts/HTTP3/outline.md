@@ -21,7 +21,9 @@ ___
 - HTTP 1.1 vs 2 vs 3
 
 3. [HTTP/3 적용시 고려 사항](http3requirements.md)
-
+- Alt-svc 해더와 
+- 단계별 HTTP 3 적용
+- 현재 HTTP 3을 지원하는 browser & Server
 
 
 ## Basics
