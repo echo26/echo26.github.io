@@ -7,31 +7,31 @@ ___
 
 # outline
 1. Alt-svc 해더와 
-2. 단계별 HTTP 3.0 적용
-3. 현재 HTTP 3.0을 지원하는 browser & Server
+2. 단계별 HTTP 3 적용
+3. 현재 HTTP 3을 지원하는 browser & Server
 
-## 1. Alt-svc 해더와 단계별 HTTP 3.0 적용
+## 1. Alt-svc 해더와 단계별 HTTP 3 적용
 **Alt-svc**: 사용 가능한 대안의 서비스를 알려준다.
 
 * eg)  Alt-Svc: h2="new.example.org:80"
 
 `http2.0`을 사용해서 `new.example.org`의 `80`번 포트를 사용.
 
-## 2. 단계별 HTTP 3.0 적용
+## 2. 단계별 HTTP 3 적용
 
-#### example.com:20000에서 http/2.0 또는 http/1.1 수행 한다고 가정.
-#### example.com:30000 에서 http/3.0을 수행.
+#### example.com:20000에서 http/2 또는 http/1.1 수행 한다고 가정.
+#### example.com:30000 에서 http/3을 수행.
 
 1. Client가 example.com:20000으로 Request
 2. examle.com:20000에서 Alt-svc와 함께 Response (Alt-svc: quic="example.com:30000" 또는, Alt-svc: quic:":30000")
-3. Client가 Alt-svc를 확인하고, HTTP/3.0을 지원한다면 호출처 변경
+3. Client가 Alt-svc를 확인하고, HTTP/3을 지원한다면 호출처 변경
 4. Client가 example.com:30000으로 Request (HTTP3.0)
 5. example.com:30000으로 부터 QUIC Response
 
 ![Image of handshaking](img/QUIC-AltSvc.png)
 
 
-## 3. 현재 HTTP 3.0을 지원하는 browser & Server
+## 3. 현재 HTTP 3을 지원하는 browser & Server
 
 
 | name | version | role | Implementation |
