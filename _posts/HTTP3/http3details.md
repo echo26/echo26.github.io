@@ -61,3 +61,6 @@ HPACK의 순차적인 스트림 전달 순서 없이 전달 가능하게 하여 
 * Packet 비교.
 
 ![Image of Multiplexing](img/httpComparison.png)
+
+
+[현재 진행 상황](https://www.fastly.com/blog/state-of-quic-and-http3-2020)
