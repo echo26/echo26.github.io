@@ -36,7 +36,7 @@ ___
 ## 4. Multiplexing
 **Multiplexing**: 하나의 connection 상에서 동시에 여러개의 request를 보내는 기술. 각각의 데이터 흐름을 스트림이라 부른다.
 
-* HTTP/1.1의 경우 하나의 TCP 연결에 하나의 스트림만 사용하기 때문에 HOLB 문제를 가지고 있음. Kepp-alive 옵션으로 어느 정도의 연결을 유지할 수는 있지만 한계가 있음.
+* HTTP/1.1의 경우 하나의 TCP 연결에 하나의 스트림만 사용하기 때문에 HOLB 문제를 가지고 있음. Keep-Alive 옵션으로 어느 정도의 연결을 유지할 수는 있지만 한계가 있음.
 * HTTP/2, 3 의 경우 하나의 연결에서 여러개의 데이터를 전송할 수 있기 때문에 핸드 쉐이크 감소 + 효율적 데이터 전송.
 
 ![Image of Multiplexing](img/Multiplexing.png)
