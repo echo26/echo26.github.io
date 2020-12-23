@@ -13,9 +13,9 @@ ___
 ## 1. Alt-svc 해더와 단계별 HTTP/3 적용
 **Alt-svc**: 사용 가능한 대안의 서비스를 알려준다.
 
-* eg)  Alt-Svc: h2="new.example.org:80"
+* eg)  Alt-Svc: h3="new.example.org:80"
 
-* 지속시간 :24시간. (ma=? 로 시간 설정 가능)
+* 지속시간 : 기본 24시간. (ma=? 로 시간 설정 가능)
 
 `http/2`을 사용해서 `new.example.org`의 `80`번 포트를 사용.
 
@@ -25,7 +25,7 @@ ___
 #### example.com:30000 에서 http/3을 수행.
 
 1. Client가 example.com:20000으로 Request
-2. examle.com:20000에서 Alt-svc와 함께 Response (Alt-svc: quic="example.com:30000" 또는, Alt-svc: quic:":30000")
+2. examle.com:20000에서 Alt-svc와 함께 Response (Alt-svc: h3="example.com:30000" 또는, Alt-svc: h3":30000")
 3. Client가 Alt-svc를 확인하고, HTTP/3을 지원한다면 호출처 변경
 4. Client가 example.com:30000으로 Request (HTTP/3)
 5. example.com:30000으로 부터 QUIC Response
