@@ -38,11 +38,12 @@ ___
 
 | name | version | role | Implementation |
 | ---- | ---- | ---- | --- |
-| nginx | 1.19 | server| [link](https://www.nginx.com/blog/introducing-technology-preview-nginx-support-for-quic-http-3/)|
+| nginx | 1.19 (실험 버젼. production level은 아직) | server| [link](https://www.nginx.com/blog/introducing-technology-preview-nginx-support-for-quic-http-3/)|
 | envoy | X | server| |
-| haproxy | 2.3 | server| [link](https://www.haproxy.com/blog/announcing-haproxy-2-3/)|
+| haproxy | X | server| |
 | apache | X | server| | 
 | chrome | 지원하지 않지만, 실행 가능 | browser | [link](https://blog.chromium.org/2020/10/chrome-is-deploying-http3-and-ietf-quic.html)|
-| safari | maxOS11 & iOS14 지원하지 않지만, 실행 가능| browser | [link](https://www.iphoneincanada.ca/news/apple-safari-http3-ios-14/) |
+| safari | 14.0~14.2 지원하지 않지만, 실행 가능| browser | [link](https://www.iphoneincanada.ca/news/apple-safari-http3-ios-14/) |
 | whale | X | browser | |
 | IE | X | browser | |
+| edge | 지원하지 않지만, 실행 가능 | browser | |
