@@ -5,6 +5,13 @@
 **Container Image: Runtime에서 (도커 엔진에서 run 할때) 이미지가 컨테이너로 전환된다.**
 
 
+## Container 사용시 장점
+* 서비스의 배포 단위로 컨테이너 이미지를 만들어서 사용할 수 있다. (1. Immutable하게 배포/롤백을 쉽게 할 수 있다. 2. Continuous Development, Continuous Integration에 적합하다.)
+* 컨테이너 관리와 어플리케이션의 관리를 분리할 수 있다. (컨테이너 클러스터 관리와 어플리케이션 배포가 분리된다.)
+* MSA에 적합하다.
+* resource를 효율적으로 사용할 수 있다.
+
+
 ## 컨테이너와 VM의 차이
 
 | / | Container | VM |
