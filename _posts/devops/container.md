@@ -29,6 +29,8 @@
 
 **docker: docker는 컨테이너를 이미지 파일로 빌드하고 배포하여 실행할 수 있도록 하는 오픈소스이다.**
 
+#### How docker works
+
 1. Create Dockerfile to build docker image on Client Machine
 2. docker build will build image on docker server (build)
 3. save docker image on local storage on docker server (build)
