@@ -25,10 +25,16 @@
 
 ![Image of docker and vm](img/containerVSvm.png)
 
-## Docker Life Cycle
+# Docker
 
-![Image of docker life cycle](img/docker_lifecycle.jpeg)
+**docker: docker는 컨테이너를 이미지 파일로 빌드하고 배포하여 실행할 수 있도록 하는 오픈소스이다.**
 
+1. Create Dockerfile to build docker image on Client Machine
+2. docker build will build image on docker server (build)
+3. save docker image on local storage on docker server (build)
+4. push docker image from dockerd to registry by docker push command
+5. download image from registry to dockerd (target) by docker push command
+6. run container using docker image
 
 ## Docker Architecture
 
