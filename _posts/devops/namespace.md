@@ -4,6 +4,7 @@
 * 하나의 프로세스가 하나의 리소스를 가리키고, 다른 프로세스는 다른 리소스를 가리키도록 한다. 즉, 프로세스 생성 시점에 어떤 네임스페이스를 사용할 지 선택하며, 네임스페이스 별로 독립된다.
 * 컨테이너라 부르는 workspace를 독립시키기 위해서 docker에서 사용된다.
 
+#### 같은 eth0여도 다른 Network Resource를 사용하게 해주는 namespace
 ![Image of docker and vm](img/netns.png)
 
 
