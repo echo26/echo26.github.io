@@ -1,4 +1,4 @@
-# Django
+# Django. Set environment
 
 ## Create a project (environment set up)
 create `mysite` directory. 
