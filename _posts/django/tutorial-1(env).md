@@ -65,6 +65,7 @@ polls/
     views.py
 ```
 
-view.py : takes a web request and returns a web response.
-urls.py : created to URLconf in poll directory.
+* view.py : takes a web request and returns a web response.
+
+* urls.py : created to URLconf in poll directory.
 
