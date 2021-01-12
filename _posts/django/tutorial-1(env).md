@@ -19,12 +19,19 @@ mysite/
 ```
 
 **mysite/: root direcotry. rename free**
+
 **manage.py: A command-line utility that lets you interact with this Django project in various ways.**
+
 **inner mysite/: the actual Python package for your project. Name = package name to be used to import anything inside it**
+
 **__init__.py : empty file tells Python that this directory should be considered a Python package.**
+
 **settings.py : configuration for this Django project.**
+
 **urls.py: The URL declarations for this Django project. In other words, "table of contents of django-powered site.**
+
 **asgi.py: an entry-point for asgi-compatible web server**
+
 **wsgi.py: an entry-point for wsgi-compatible web server**
 
 
