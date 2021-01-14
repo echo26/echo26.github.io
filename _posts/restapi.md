@@ -87,3 +87,6 @@ GET : /users/{userid}/likes/devices (관계 명이 애매하거나 구체적 표
 ```
 http:// restapi.example.com/sports/soccer (collection: sports. document: soccer)
 ```
+
+
+[link](https://meetup.toast.com/posts/92)
