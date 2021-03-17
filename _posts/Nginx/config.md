@@ -14,8 +14,26 @@ worker_rlimit_nofile
 ...
 
 
-http block (Define http configuratione of Nginx)
+#http contenxt (Define http configuratione of Nginx)
 http {
 
+      # server context (Define ip address / port and server_name to upstream/ within http context)
+      server {
+      
+          # loccation context (Define relational qualities with server contexts.)
+          location match_modifier location_match {
+          
+          }
+      
+      }
+      
+      # upstream context (pass requests of the pool of servers. within http context)
+      upstream {
+      }
+      
+      
 
 }
+```
+
+
