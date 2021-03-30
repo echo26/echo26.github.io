@@ -8,15 +8,11 @@ TX : Transmit from this server
 Rx : Receive To this server
 
 
-Bandwidth Utlization formula:
+Bandwidth: the amount of data your website can transfer to your users in a given amount of time.
 
 
-Utilization:  The average percentage of bandwidth utilization rates the report period.
+BW(meas) = Bits(rx or tx)/time period.
 
- 
+Then utilization is
 
-Bandwidth Utilization   | (Total Bytes In + Total Bytes Out) x 8 x 100% |
-
-                                    |---------------------------------------------    |  / report period
-
-                                    |  (Speed In + Speed Out)                                 |
+Utilization = BW(meas) / BW(link)  * 100
