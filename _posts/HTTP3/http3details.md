@@ -23,6 +23,11 @@ ___
 * 신뢰성있는 데이터 전송을 보장해주지 못하기 때문에, 신뢰성보다는 연속성이 중요한 서비스에 많이 사용된다. (Streaming)
 * 손실 감지: ACK기반 (3개의 중복 ACK 발생 또는 RACK) + time-out (Probe Time-out 타이머 사용)
 
+
+#### time to first byte(클라이언트의 요청이 응답으로 도착하기 직전까지의 시간) 기준. 평균적으로 HTTP/3는 176ms, HTTP/2는 201ms로 12.4% 전송 속도 향상 을 보여줌. [출처](https://blog.cloudflare.com/http-3-vs-http-2/)
+#### 
+![Image of comparison](img/httpComparison.png)
+
 ## 3. O-RTT
 
 **RTT(Round Trip Time)**: 클라이언트가 보낸 요청을 서버가 처리한 후 다시 클라이언트로 응답해주는 사이클.
@@ -32,6 +37,7 @@ ___
 * UDP: 1 RTT (첫 연결 설정.) 0 RTT ( 한번 연결에 성공하면, 그 설정을 캐싱 해 놓고 다음 연결시 바로 연결 성립)
 
 ![Image of RTT](img/gcp-cloud-cdn-performance.gif)
+
 
 ## 4. Multiplexing
 **Multiplexing**: 하나의 connection 상에서 동시에 여러개의 request를 보내는 기술. 각각의 데이터 흐름을 스트림이라 부른다.
@@ -43,6 +49,7 @@ ___
 
 ## 5. HPACK vs QPACK
 **HPACK**: 무손실 압축을 하는 알고리즘(Huffman code를 사용)을 사용해서 Header정보를 압축한다. 요청과 응답의 중복되는 부분을 제거해 전송되는 데이터의 양을 줄일 수 있다.
+
 **QPACK**: 순서가 바뀐 전송에서도 헤더의 도착 순서를 보장.
 
 HPACK의 순차적인 스트림 전달 순서 없이 전달 가능하게 하여 병렬처리 성능을 개선하여 나온 QPACK
@@ -58,9 +65,7 @@ HPACK의 순차적인 스트림 전달 순서 없이 전달 가능하게 하여 
 | Binary Protocols | X | O | O |
 | TCP/UDP | TCP | TCP | UDP |
 
-* Packet 비교.
-
-![Image of Multiplexing](img/httpComparison.png)
-
 
 [현재 진행 상황](https://www.fastly.com/blog/state-of-quic-and-http3-2020)
+
+[HTTP/3 적용시 고려 사항](http3requirements.md) 으로 이동

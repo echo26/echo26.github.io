@@ -47,3 +47,15 @@ ___
 | whale | X | browser | |
 | IE | X | browser | |
 | edge | 지원하지 않지만, 실행 가능 | browser | |
+
+
+<br>
+
+## HTTP/3 의 개선사항
+congestion control 알고리즘에 따라 성능에 영향을 미칠 수 있습니다. Cloudflare의 테스트 결과입니다. 
+BBRv1을 사용한 HTTP2와 CUBIC 을 사용한 HTTP/3입니다. [참조](https://blog.cloudflare.com/http-3-vs-http-2/)
+
+![Image of comparison](img/performanceSmallData.png)
+
+![Image of comparison](img/performanceHugeData.png)
+

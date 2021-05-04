@@ -4,7 +4,7 @@ date: 2020-11-02 17:00:00 -0400
 categories: study update
 ___
 
-# HTTP 3
+# HTTP 3 적용
 
 ## Outline
 1. [TCP 의 특징](tcpDegradation.md)

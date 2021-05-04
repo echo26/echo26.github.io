@@ -11,12 +11,13 @@ ___
 
 
 ## 1. TCP의 정의
-**TCP(Transmission Control Protocol)**: 서버와 클라이언트간에 데이터를 신뢰성 있게 전달하기 위해 만들어진 프로토콜이다. 신뢰성이 높고 연결 지향적이다.
+**TCP(Transmission Control Protocol)**: 서버와 클라이언트간에 데이터를 `신뢰성` 있게 전달하기 위해 만들어진 프로토콜이다. 신뢰성이 높고 연결 지향적이다.
 
 ## 2. TCP 작동 원리
 * IP를 통해 패킷을 목적지 까지 보낸다.
-* 데이터 누락, 패킷 순서 뒤바뀜등의 테이터 검사 및 교정이 가능하다.
 * 3단계로 커넥션을 맺는다. (3 way handshaking)
+* 데이터 누락, 패킷 순서 뒤바뀜등의 테이터 검사 및 교정이 가능하다.
+
 
 ## 3 way handshake
 **3 Way handshake**: TCP 소켓으로 클라이언트와 서버가 연결되는 과정. SYNC와 ACK라는 패킷을 주고 받아 패킷 순서, 패킷 수신 여부 확인.
@@ -40,3 +41,13 @@ ___
 * TCP 통신에서 패킷은 반드시 순서대로 처리되어야 한다.(시퀀스 번호를 참고하여 패킷을 재조립하기 때문에)
 * HTTP/2 에서는 Stream을 통한 multiplexing으로 slow first resource에 대한 문제를 해결.
 * 단, TCP packet 유실이 있다면, 모든 later packet들은 재전송을 가다려야 하며 HOL blocking이 발생한다.
+
+![Image of handshaking](img/tcp-chain-streams.png)
+
+
+
+
+<br>
+<br>
+
+[HTTP/3의 특징](http3details.md) 으로 이동 🏂
