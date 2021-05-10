@@ -2,7 +2,7 @@
 
 `prometheus`: system monitoring and alerting tookit.
 
-## features 
+## Features 
 * multi dimensional data model with time series data
 * PromQL
 * no reliance on distributed storage
@@ -12,7 +12,7 @@
 * multiple modes of graping and dashboarding support
 
 
-## component
+## Component
 * the main Prometheus server which scrapes and stores time series data
 * client libraries for instrumenting application code
 * a push gateway for supporting short-lived jobs
