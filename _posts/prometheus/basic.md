@@ -24,4 +24,5 @@
 
 ## Fit and Not Fit
 `fit`: recording any purely numeric time series. 
+
 `not fit`: 100% accuracy condition (prometheus are available even under failure conditions)
