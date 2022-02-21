@@ -1,7 +1,6 @@
+## Cron inside Docker container
 
 https://stackoverflow.com/questions/37015624/how-to-run-a-cron-job-inside-a-docker-container
-https://www.thegeekstuff.com/2012/07/crontab-log/#:~:text=2%3E%261%20indicates%20that%20the,%2Fjohn%2Flogs%2Fbackup.
-
 
 Dockerfile -> entry.sh -> crontab.txt
 
@@ -35,4 +34,19 @@ python app.py
 ### crontab.txt
 ```
 * 10 * * * python /source/dir/sciprt.py
+```
+
+## cron logging 
+https://www.thegeekstuff.com/2012/07/crontab-log/#:~:text=2%3E%261%20indicates%20that%20the,%2Fjohn%2Flogs%2Fbackup.
+
+### log for batch job
+cron.txt
+```
+* 10 * * * python /source/dir/sciprt.py >> /var/log/cron.log 2>&1
+```
+
+### 
+entry.sh
+```
+/usr/sbin/crond -b -L /var/log/cron.log
 ```
